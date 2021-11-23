@@ -13,12 +13,12 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         setupSpinner()
         setupButton()
-
     }
 
     private fun setupSpinner() {
         val spinnerTitles = arrayOf("Mrs", "Mr", "Miss", "Ms", "Dr", "Prof")
-        val titleAdapter = ArrayAdapter(this, android.R.layout.simple_spinner_dropdown_item, spinnerTitles)
+        val titleAdapter =
+            ArrayAdapter(this, android.R.layout.simple_spinner_dropdown_item, spinnerTitles)
         spinner_title.adapter = titleAdapter
     }
 
